@@ -1,3 +1,41 @@
+header {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none; /* gets rid of the bullet list syle */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* space between links */
+}
+
+.nav-links li {margin: 0;}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #007BFF
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -9,6 +47,21 @@ body {
   h1 {
     text-align: center;
     margin-top: 50px;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .profile-pic {
+    width: 200px; /* Set the width */
+    height: 200px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 0; /* Optional: Makes the image circular */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Centers the image */
   }
   
   p {
