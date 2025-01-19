@@ -1,7 +1,25 @@
+/* ==================== General Styles ==================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* ==================== Header ==================== */
 header {
   background-color: #f5f5f5;
   padding: 10px 20px;
-  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #ccc;
 }
 
 .header-container {
@@ -11,20 +29,23 @@ header {
 }
 
 .site-title {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   margin: 0;
+  text-align: center; /* Aligns the header title to the center */
 }
 
 .nav-links {
-  list-style: none; /* gets rid of the bullet list syle */
+  list-style: none; /* Removes bullets */
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 15px; /* space between links */
+  gap: 15px; /* Adds space between links */
 }
 
-.nav-links li {margin: 0;}
+.nav-links li {
+  margin: 0;
+}
 
 .nav-links a {
   text-decoration: none;
@@ -33,39 +54,79 @@ header {
 }
 
 .nav-links a:hover {
-  color: #007BFF
+  color: #007BFF; /* Adds hover effect */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-  }
+/* ==================== Home Page Styles ==================== */
+.about-container {
+  display: flex;
+  align-items: flex-start; /* Ensures alignment to the top of the section */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
 
-  .about-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.profile-pic {
+  width: 20vw; /* Scales with screen size */
+  max-width: 150px; /* Ensures it doesn't exceed 150px */
+  aspect-ratio: 1 / 1; /* Keeps it square */
+  object-fit: cover; /* Crops the image */
+  border-radius: 0; /* Optional: Adjust if you want rounded corners */
+  display: block;
+  margin: 0 auto; /* Centers image in its container */
+}
 
-  .profile-pic {
-    width: 200px; /* Set the width */
-    height: 200px; /* Maintain aspect ratio */
-    object-fit: cover;
-    border-radius: 0; /* Optional: Makes the image circular */
-    display: block; /* Ensures proper alignment */
-    margin: 0 auto; /* Centers the image */
-  }
-  
-  p {
-    text-align: center;
-    font-size: 18px;
-  }
+.about-text {
+  flex: 1;
+}
+
+#about p, #about h2 {
+  text-align: left; /* Aligns text to the left for About Me section */
+}
+
+/* ==================== Portfolio Page Styles ==================== */
+.portfolio-page {
+  background-color: #f4f4f9;
+}
+
+.portfolio-page header h1 {
+  color: #333;
+  text-align: center; /* Centers the header title */
+}
+
+.plagiarism-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px;
+}
+
+.plagiarism-container img {
+  width: 90vw; /* Scales image with screen size */
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px; /* Adds rounded corners */
+}
+
+.plagiarism-text {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ==================== Interests Page Styles ==================== */
+/* Add specific styles for your Interests page if needed */
+.interests-page {
+  background-color: #fff; /* Example background color */
+}
+
+.interests-page header h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Additional styles for sections on the Interests page */
+
+
   
